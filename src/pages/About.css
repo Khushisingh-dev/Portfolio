@@ -1,0 +1,164 @@
+.about-page {
+  text-align: center;
+  min-height: 50vh;
+}
+
+.page-heading {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px #00f0ff, 0 0 20px #00e0ff;
+  animation: glow 2s ease-in-out infinite;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes glow {
+
+  0%,
+  100% {
+    text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+  }
+
+  50% {
+    text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+  }
+}
+
+.about-card {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  max-width: 850px;
+  margin: auto;
+  padding: 10px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-quote {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #fff;
+  margin: 16px auto 14px auto;
+  max-width: 720px;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 0.2px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.55px;
+}
+
+.card-quote::before,
+.card-quote::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 36px;
+  height: 1px;
+  margin: 0 12px;
+  background: linear-gradient(90deg, transparent, rgba(0, 240, 255, 0.6), transparent);
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.18);
+  border-radius: 2px;
+}
+
+.about-description {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.61;
+  color: #ccc;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.mini-heading {
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.63px;
+}
+
+.mini-heading::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: 8px auto 0;
+  background: linear-gradient(90deg, transparent, #00f0ff, transparent);
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.skill-pill {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  color: #fff;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  font-family: "Inter", sans-serif;
+}
+
+.skill-pill:hover {
+  background: rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .page-heading {
+    font-size: 1.6rem;
+    margin-top: 12px;
+  }
+
+  .about-card {
+    padding: 8px 15px;
+    margin-top: 20px;
+  }
+
+  .card-quote {
+    font-size: 0.8rem;
+    max-width: 90%;
+  }
+
+  .card-quote::before,
+  .card-quote::after {
+    width: 24px;
+    margin: 0 8px;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
+  .mini-heading {
+    font-size: 1.25rem;
+  }
+
+  .mini-heading::after {
+    width: 70px;
+  }
+
+  .skills-grid {
+    gap: 8px;
+  }
+
+  .skill-pill {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}

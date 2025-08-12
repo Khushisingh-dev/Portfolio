@@ -1,0 +1,101 @@
+.home-container {
+  min-height: 50vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.home-header h1 {
+  font-size: 3rem;
+  margin-bottom: 3px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.home-header h2 {
+  font-size: 1.75rem;
+  color: #ccc;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-top: 12px;
+}
+
+.home-intro {
+  max-width: 700px;
+  color: #aaa;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-family: "Inter", sans-serif;
+}
+
+.know-me-btn {
+  margin-top: 27px;
+  background: linear-gradient(135deg, #00f0ff, #00bfff);
+  color: #0f0f0f;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  font-family: "Inter", sans-serif;
+  transition: all 0.3s ease, box-shadow 0.4s ease;
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.6);
+}
+
+.know-me-btn:hover {
+  transform: scale(1.2);
+  background: linear-gradient(135deg, #26f1ff, #00cfff);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.9),
+    0 0 30px rgba(0, 240, 255, 0.6);
+  color: #0f0f0f;
+}
+
+@keyframes glow {
+
+  0%,
+  100% {
+    text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+  }
+
+  50% {
+    text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+  }
+}
+
+.glow-text {
+  animation: glow 2s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 40px 15px;
+    margin-top: 0;
+  }
+
+  .home-header h1 {
+    font-size: 2rem;
+  }
+
+  .home-header h2 {
+    font-size: 1.25rem;
+    margin-top: 8px;
+  }
+
+  .home-intro {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-top: 12px;
+  }
+
+  .know-me-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+}

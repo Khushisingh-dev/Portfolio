@@ -1,0 +1,175 @@
+.projects-page {
+  text-align: center;
+  min-height: 50vh;
+}
+
+.page-heading {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px #00f0ff, 0 0 20px #00e0ff;
+  animation: glow 2s ease-in-out infinite;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes glow {
+
+  0%,
+  100% {
+    text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+  }
+
+  50% {
+    text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+  }
+}
+
+.projects-card {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 15px;
+  max-width: 650px;
+  margin: auto;
+  padding: 8.5px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.project-single-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.project-content {
+  text-align: center;
+  color: #fff;
+}
+
+.project-content h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-top: 8px;
+  letter-spacing: 0.67px;
+}
+
+.project-content p {
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  margin-top: -15px;
+  color: #ccc;
+  letter-spacing: 0.5px;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.project-links a {
+  border-radius: 8px;
+  background: linear-gradient(135deg, #00f0ff, #00bfff);
+  color: #0f0f0f;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  transition: all 0.3s ease, box-shadow 0.4s ease;
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.6);
+}
+
+.project-links a:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #26f1ff, #00cfff);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.9),
+    0 0 30px rgba(0, 240, 255, 0.6);
+  color: #0f0f0f;
+}
+
+.project-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.arrow-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(0, 245, 255, 0.3);
+  padding: 8px 8px;
+  margin-left: 42%;
+  margin-right: 42%;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.arrow-btn:hover {
+  background: rgba(0, 255, 255, 0.15);
+  border-color: rgba(0, 255, 255, 0.5);
+}
+
+/* Mobile & small tablets */
+@media (max-width: 768px) {
+
+  .page-heading {
+    font-size: 1.6rem;
+  }
+
+  .projects-card {
+    max-width: 95%;
+    padding: 10px 14px;
+  }
+
+  .project-image {
+    max-width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+
+  .project-content h3 {
+    font-size: 1.1rem;
+    margin-top: 6px;
+    line-height: 1.6rem;
+    margin-bottom: 22px;
+  }
+
+  .project-content p {
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    letter-spacing: 0.7px;
+  }
+
+  .project-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+
+  .project-links a {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .arrow-btn {
+    margin-left: 126px;
+    margin-right: 126px;
+    padding: 6px 6px;
+    margin-bottom: 12px;
+  }
+}

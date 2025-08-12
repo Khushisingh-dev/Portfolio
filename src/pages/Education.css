@@ -1,0 +1,198 @@
+.education-page {
+  text-align: center;
+  min-height: 50vh;
+}
+
+.page-heading {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px #00f0ff, 0 0 20px #00e0ff;
+  animation: glow 2s ease-in-out infinite;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes glow {
+
+  0%,
+  100% {
+    text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+  }
+
+  50% {
+    text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+  }
+}
+
+.education-card {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  max-width: 850px;
+  margin: auto;
+  padding: 22px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.institute-name {
+  font-size: 1.35rem;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: 2px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 2px;
+  letter-spacing: 0.63px;
+}
+
+.course-year {
+  font-style: italic;
+  font-size: 1rem;
+  color: #aaa;
+  font-family: "Inter", sans-serif;
+  margin-top: 7px;
+}
+
+.education-description {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+  color: #ccc;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.section-subheading {
+  margin-top: 16px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.63px;
+}
+
+.section-subheading::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: 8px auto 0;
+  background: linear-gradient(90deg, transparent, #00f0ff, transparent);
+}
+
+.certification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.certification-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.certification-item:hover {
+  transform: scale(1.02);
+}
+
+.cert-name {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-family: "Inter", sans-serif;
+}
+
+.cert-name:hover {
+  color: #00f0ff;
+  text-decoration: underline;
+}
+
+.cert-date {
+  font-size: 0.83rem;
+  color: #9ca3af;
+  white-space: nowrap;
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .page-heading {
+    font-size: 1.6rem;
+  }
+
+  .education-card {
+    padding: 15px 12px;
+    margin-top: 20px;
+  }
+
+  .institute-name {
+    font-size: 1.1rem;
+  }
+
+  .course-year {
+    font-size: 0.9rem;
+    margin-top: 4px;
+  }
+
+  .education-description {
+    font-size: 0.95rem;
+    padding: 0 10px;
+    line-height: 1.5;
+  }
+
+  .section-subheading {
+    font-size: 1.25rem;
+  }
+
+  .section-subheading::after {
+    width: 70px;
+  }
+
+  .certification-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 8px 10px;
+  }
+
+  .cert-name {
+    font-size: 0.9rem;
+  }
+
+  .cert-date {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-heading {
+    font-size: 1.4rem;
+  }
+
+  .institute-name {
+    font-size: 1rem;
+  }
+
+  .section-subheading {
+    font-size: 1.1rem;
+  }
+
+  .cert-name {
+    font-size: 0.85rem;
+  }
+
+  .cert-date {
+    font-size: 0.7rem;
+  }
+}
