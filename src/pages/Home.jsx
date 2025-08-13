@@ -26,10 +26,12 @@ const Home = () => {
         </h2>
       </div>
 
+<div   data-aos="zoom-in"
+        data-aos-delay="800">
       <p
         className="home-intro"
-        data-aos="fade-right"
-        data-aos-delay="600"
+        // data-aos="zoom-in"
+        // data-aos-delay="600"
       >
         I’m a passionate frontend developer with a strong foundation in HTML, CSS, JavaScript, and React.
         I love building clean, responsive UIs and exploring creative solutions to problems through code.
@@ -38,12 +40,10 @@ const Home = () => {
       <p
         className='home-intro'
         style={{ fontStyle: "italic", fontWeight: "300", color: "#eee" }}
-        data-aos="fade-left"
-        data-aos-delay="800"
       >
         "Frontend isn’t just about visuals — it’s about emotion, flow, and the silent language between user and machine."
       </p>
-
+</div>
       <a
         href="/path-to-your-resume.pdf"
         target="_blank"

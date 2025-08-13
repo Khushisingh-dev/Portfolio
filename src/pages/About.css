@@ -120,12 +120,13 @@
 @media (max-width: 768px) {
   .page-heading {
     font-size: 1.6rem;
-    margin-top: 12px;
+    padding-top: 28px;
+     margin-bottom: 20px;
   }
 
   .about-card {
     padding: 8px 15px;
-    margin-top: 20px;
+    margin-top: 18px;
   }
 
   .card-quote {

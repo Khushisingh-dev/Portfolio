@@ -27,29 +27,30 @@ const Education = () => {
 
       >
         <div
-          className="education-info"
-          data-aos="fade-right"
-          data-aos-delay="600"
-        >
-          <h3 className="institute-name">Bareilly College, Bareilly</h3>
-          <p className="course-year">
-            Bachelor of Computer Applications (BCA) | 2023–2026
-          </p>
-          <p className="education-description">
-            Currently in my final year of BCA, I’ve built a strong base in data structures, modern web technologies, and database systems — sharpening my logic, creativity, and ability to turn concepts into real-world solutions.
-          </p>
+          className="education-info">
+          <h3 className="institute-name" data-aos="fade-up"
+            data-aos-delay="600">Bareilly College, Bareilly</h3>
+          <div data-aos="zoom-in"
+            data-aos-delay="800">
+            <p className="course-year" >
+              Bachelor of Computer Applications (BCA) | 2023–2026
+            </p>
+            <p className="education-description" >
+              Currently in my final year of BCA, I’ve built a strong base in data structures, modern web technologies, and database systems — sharpening my logic, creativity, and ability to turn concepts into real-world solutions.
+            </p>
+          </div>
         </div>
 
         <h3
           className="section-subheading"
           data-aos="fade-up"
-          data-aos-delay="800"
+          data-aos-delay="1000"
         >
           Certifications & Courses
         </h3>
 
         <div className="certification-list" data-aos="zoom-in"
-          data-aos-delay="1000">
+          data-aos-delay="1200">
           <div
             className="certification-item"
           >

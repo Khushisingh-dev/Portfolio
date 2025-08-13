@@ -74,7 +74,7 @@
 
 @media (max-width: 768px) {
   .home-container {
-    padding: 40px 15px;
+    padding: 82px 15px;
     margin-top: 0;
   }
 
@@ -90,7 +90,7 @@
   .home-intro {
     font-size: 0.95rem;
     line-height: 1.5;
-    margin-top: 12px;
+    margin-top: 14px;
   }
 
   .know-me-btn {

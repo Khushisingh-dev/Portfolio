@@ -24,9 +24,11 @@ const About = () => {
       <section
         className="about-card"
       >
+        {/* <div  data-aos="fade-right"
+          data-aos-delay="600"> */}
         <p
           className="card-quote"
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-delay="600"
         >
           "few words about me..."
@@ -34,12 +36,12 @@ const About = () => {
 
         <p
           className="about-description"
-          data-aos="fade-left"
-          data-aos-delay="800"
+          data-aos="zoom-in"
+          data-aos-delay="900"
         >
           I’m Khushi Singh, a developer who thrives in the calm of late nights. I find peace in singing my favorite tunes, joy in exploring new places, and focus when the world is quiet. In short — they fuel the creativity and purpose behind everything I build.
         </p>
-
+{/* </div> */}
         <div
           className="about-tech-tools"
           data-aos="fade-up"

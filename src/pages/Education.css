@@ -178,18 +178,31 @@
 @media (max-width: 480px) {
   .page-heading {
     font-size: 1.4rem;
+    padding-top: 28px;
+    margin-bottom: 20px;
   }
+
+   .education-card {
+    margin-top: 18px;
+   } 
+
 
   .institute-name {
     font-size: 1rem;
+    margin-bottom: 10px;
   }
 
   .section-subheading {
     font-size: 1.1rem;
   }
 
+  .certification-list{
+    gap: 15px;
+  }
+
   .cert-name {
     font-size: 0.85rem;
+    margin-bottom: 3px;
   }
 
   .cert-date {
